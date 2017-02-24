@@ -1,6 +1,5 @@
 package org.inventivetalent.messagebuilder;
 
-import javax.annotation.Nonnull;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -15,7 +14,7 @@ public class MessageMap implements MessageContainer {
 	}
 
 	@Override
-	public String getMessage(@Nonnull String key) {
+	public String getMessage(String key) {
 		return messages.get(key);
 	}
 
@@ -25,7 +24,7 @@ public class MessageMap implements MessageContainer {
 	}
 
 	@Override
-	public String getMessage(@Nonnull String key, @Nonnull ReplacementContainer container) {
+	public String getMessage(String key, ReplacementContainer container) {
 		return messages.containsKey(key) ? container.format(messages.get(key)) : "";
 	}
 

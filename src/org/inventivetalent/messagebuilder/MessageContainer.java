@@ -1,7 +1,5 @@
 package org.inventivetalent.messagebuilder;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 import java.util.Set;
 
 public interface MessageContainer {
@@ -12,7 +10,7 @@ public interface MessageContainer {
 	 * @param key Message to get
 	 * @return the Message
 	 */
-	String getMessage(@Nonnull String key);
+	String getMessage(String key);
 
 	/**
 	 * Get a specific message
@@ -21,8 +19,7 @@ public interface MessageContainer {
 	 * @param format Format for the message
 	 * @return the Message
 	 */
-	@Nullable
-	String getMessage(@Nonnull String key, @Nullable Object... format);
+	String getMessage( String key,  Object... format);
 
 	/**
 	 * Get a specific message with replacements
@@ -31,19 +28,16 @@ public interface MessageContainer {
 	 * @param container {@link ReplacementContainer} with replacements
 	 * @return the Message
 	 */
-	@Nullable
-	String getMessage(@Nonnull String key, @Nonnull ReplacementContainer container);
+	String getMessage( String key, ReplacementContainer container);
 
 	/**
 	 * @return a {@link Set} of all messages
 	 */
-	@Nonnull
 	Set<String> getMessages();
 
 	/**
 	 * @return a {@link Set} of all message keys
 	 */
-	@Nonnull
 	Set<String> getMessageKeys();
 
 }
