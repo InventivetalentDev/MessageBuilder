@@ -53,7 +53,6 @@
                             <artifactSet>
                                 <includes>
                                     <include>org.inventivetalent:messagebuilder**</include>
-                                    <include>org.json**</include>
                                 </includes>
                             </artifactSet>
                         </configuration>
@@ -80,11 +79,6 @@
             <artifactId>spigot-api</artifactId>
             <version>1.9.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20140107</version>
         </dependency>
     </dependencies>
 
