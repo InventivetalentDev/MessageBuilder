@@ -1,0 +1,4 @@
+name: MessageBuilder
+main: org.inventivetalent.messagebuilder.MessageBuilderPlugin
+author: inventivetalent
+version: ${project.version}

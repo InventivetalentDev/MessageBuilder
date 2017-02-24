@@ -1,0 +1,5 @@
+messages:
+  player:
+    msg:
+      msg1: "this message has the key 'player.msg.msg1'"
+      msg2: "this message has the key 'player.msg.msg2'"
